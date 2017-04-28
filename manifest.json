@@ -1,0 +1,41 @@
+{
+	// Require!
+	"manifest_version": 2,
+	"name": "YTPControll",
+	"version": "1.0",
+
+	// Recommend.
+	"description": "メディアキーでようつべを操作",
+
+	"commands": {
+		"play-pause": {
+			"description": "動画の再生/停止",
+			"global": true,
+			"suggested_key": {
+				"default": "MediaPlayPause"
+			}
+		},
+		"prev": {
+			"description": "前の動画",
+			"global": true,
+			"suggested_key": {
+				"default": "MediaPrevTrack"
+			}
+		},
+		"next": {
+			"description": "次の動画",
+			"global": true,
+			"suggested_key": {
+				"default": "MediaNextTrack"
+			}
+		}
+	},
+
+	"background": {
+			"scripts": ["jquery.min.js","script.js"],
+			"persistent": true
+	},
+
+	"permissions": ["commands","tabs","https://www.youtube.com/watch?*"]
+
+}
