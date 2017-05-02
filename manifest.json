@@ -32,7 +32,7 @@
 	},
 
 	"background": {
-			"scripts": ["jquery.min.js","script.js"],
+			"scripts": ["script.js"],
 			"persistent": true
 	},
 
